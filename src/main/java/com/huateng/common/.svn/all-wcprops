@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/com/huateng/common
+END
+RescodeMapping.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/com/huateng/common/RescodeMapping.java
+END
+ComCons.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/com/huateng/common/ComCons.java
+END
+LOG.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/com/huateng/common/LOG.java
+END
+ConstantsBean.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/com/huateng/common/ConstantsBean.java
+END
+ConstantsDictionary.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/com/huateng/common/ConstantsDictionary.java
+END
+XmlDBConstants.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/com/huateng/common/XmlDBConstants.java
+END
+Rescode.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/com/huateng/common/Rescode.java
+END
+Module.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/com/huateng/common/Module.java
+END
+EncryptionTool.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/com/huateng/common/EncryptionTool.java
+END
+ComFunc.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/com/huateng/common/ComFunc.java
+END
+Constants.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/com/huateng/common/Constants.java
+END
+DescUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/com/huateng/common/DescUtil.java
+END
+SystemDProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/com/huateng/common/SystemDProperty.java
+END
+UserSessionInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/com/huateng/common/UserSessionInfo.java
+END

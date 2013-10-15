@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+<sqlMap namespace="COM_TBL" >
+  <!-- 测试Sql --> 
+	<select id="COM_TBL.sqlQuery" parameterClass="java.lang.Object" resultClass="java.util.HashMap" remapResults="true"> 
+	<![CDATA[ 
+		$sql$ 
+	]]>
+	</select>
+	
+	<select id="COM_TBL.sqlSum" parameterClass="java.lang.Object" resultClass="java.lang.Object" remapResults="true"> 
+	<![CDATA[ 
+		$sql$ 
+	]]>
+	</select>
+</sqlMap>

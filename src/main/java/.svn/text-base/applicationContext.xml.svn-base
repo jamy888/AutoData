@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="   
+            http://www.springframework.org/schema/beans 
+            http://www.springframework.org/schema/beans/spring-beans-2.5.xsd ">
+
+	<!-- 1：配置数据源（从ibatis配置改到spring配置） -->
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		destroy-method="close">
+		<property name="driverClass" value="oracle.jdbc.driver.OracleDriver"></property>
+
+		<property name="jdbcUrl" value="jdbc:oracle:thin:@130.233.19.7:1521:mecp"></property>
+		<property name="user" value="dev_posp"></property>
+		<property name="password" value="dev_posp123"></property>
+
+		<property name="minPoolSize" value="1"></property>
+		<property name="maxPoolSize" value="5"></property>
+		<property name="maxIdleTime" value="180"></property>
+	</bean>
+
+	<!-- Transaction manager -->
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+
+	<!-- 2：spring的ibatis配制，目的是要SqlMapClientTemplate -->
+	<bean id="sqlMapClient" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+		<property name="dataSource">
+			<ref local="dataSource" />
+		</property>
+		<property name="configLocation">
+			<value>classpath:SqlMapConfig.xml</value>
+		</property>
+	</bean>
+
+	<!-- <bean id="sqlMapClient" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean"> 
+		<property name="configLocation"> <value>classPath:SqlMapConfig.xml</value> 
+		</property> <property name="dataSource"> <ref bean="dataSource" /> </property> 
+		</bean> -->
+
+	<!-- strust2的通用配置 -->
+	<import resource="struts.xml" />
+
+	<!-- 3.Spring 注入过程 -->
+	<bean id="tblAdmOprInfo" class="cmt.getData.po.TblAdmOprInfo" />
+	<bean id="tblAppMarketingToolUsedtl" class="cmt.getData.po.TblAppMarketingToolUsedtl"></bean>
+	<!-- DAOImpl的注入 -->
+	<bean name="comTbldtlDao" class="cmt.getData.dao.ComTbldtlDAOImpl">
+		<property name="sqlMapClient" ref="sqlMapClient"></property>
+	</bean>
+	<bean name="tblAdmOprInfoDao" class="cmt.getData.dao.TblAdmOprInfoDAOImpl">
+		<property name="sqlMapClient" ref="sqlMapClient"></property>
+	</bean>
+	<bean name="tblAppMarketingToolUsedtlDao" class="cmt.getData.dao.TblAppMarketingToolUsedtlDAOImpl">
+		<property name="sqlMapClient" ref="sqlMapClient"></property>
+	</bean>
+	<!-- ServiceImpl的注入 -->
+	<bean name="comTbldtlService" class="cmt.getData.services.impl.ComTbldtlServiceImpl">
+		<property name="comTbldtlDAO" ref="comTbldtlDao"></property>
+	</bean>
+	<bean name="tblAdmOprInfoservice" class="cmt.getData.services.impl.TblAdmOprInfoServiceImpl">
+		<property name="tblAdmOprInfoDAO" ref="tblAdmOprInfoDao"></property>
+	</bean>
+	<bean name="tblAppMarketingToolUsedtlservice" class="cmt.getData.services.impl.TblAppMarketingToolUsedtlServiceImpl">
+		<property name="tblAppMarketingToolUsedtldao" ref="tblAppMarketingToolUsedtlDao"></property>
+	</bean>
+	<!-- action的注入 -->
+	<bean name="tblAdmOprInfoAction" class="cmt.getData.action.ADMLOGIN01">
+		<property name="tblAdmOprInfoservice" ref="tblAdmOprInfoservice"></property>
+	</bean>
+		<!-- 删除文件 -->
+	<bean name="deletefile" class="cmt.getData.action.DeleteFileAndDirAction"/>
+	<bean name="GETTEXT011" class="cmt.getData.action.GETTEXT011">
+		<!-- <property name="tblAppMarketingToolUsedtlService" ref="tblAppMarketingToolUsedtlservice"></property> -->
+		<property name="comTbldtlService" ref="comTbldtlService"></property>
+	</bean>
+	<bean name="GETTEXT012" class="cmt.getData.action.GETTEXT012">
+		<property name="comTbldtlService" ref="comTbldtlService"></property>
+	</bean>
+	<bean name="GETTEXT021" class="cmt.getData.action.GETTEXT021">
+		<property name="comTbldtlService" ref="comTbldtlService"></property>
+	</bean>
+	<bean name="GETTEXT022" class="cmt.getData.action.GETTEXT022">
+		<property name="comTbldtlService" ref="comTbldtlService"></property>
+	</bean>
+	<bean name="GETTEXT023" class="cmt.getData.action.GETTEXT023">
+		<property name="comTbldtlService" ref="comTbldtlService"></property>
+	</bean>
+	<bean name="GETTEXT031" class="cmt.getData.action.GETTEXT031">
+		<property name="comTbldtlService" ref="comTbldtlService"></property>
+	</bean>
+	<bean name="GETTEXT041" class="cmt.getData.action.GETTEXT041">
+		<property name="comTbldtlService" ref="comTbldtlService"></property>
+	</bean>
+	<bean name="GETTEXT042" class="cmt.getData.action.GETTEXT042">
+		<property name="comTbldtlService" ref="comTbldtlService"></property>
+	</bean>
+	<bean name="GETTEXT111" class="cmt.getData.action.GETTEXT111">
+		<property name="comTbldtlService" ref="comTbldtlService"></property>
+	</bean>
+	<bean name="GETTEXT112" class="cmt.getData.action.GETTEXT112">
+		<property name="comTbldtlService" ref="comTbldtlService"></property>
+	</bean>
+	<bean name="GETTEXT113" class="cmt.getData.action.GETTEXT113">
+		<property name="comTbldtlService" ref="comTbldtlService"></property>
+	</bean>
+	<bean name="GETTEXT114" class="cmt.getData.action.GETTEXT114">
+		<property name="comTbldtlService" ref="comTbldtlService"></property>
+	</bean>
+	<bean name="GETTEXT115" class="cmt.getData.action.GETTEXT115">
+		<property name="comTbldtlService" ref="comTbldtlService"></property>
+	</bean>
+	<bean name="GETTEXT121" class="cmt.getData.action.GETTEXT121">
+		<property name="comTbldtlService" ref="comTbldtlService"></property>
+	</bean>
+	<bean name="GETTEXT122" class="cmt.getData.action.GETTEXT122">
+		<property name="comTbldtlService" ref="comTbldtlService"></property>
+	</bean>
+	<bean name="GETTEXT123" class="cmt.getData.action.GETTEXT123">
+		<property name="comTbldtlService" ref="comTbldtlService"></property>
+	</bean>
+	<bean name="GETTEXT131" class="cmt.getData.action.GETTEXT131">
+		<property name="comTbldtlService" ref="comTbldtlService"></property>
+	</bean>
+	
+
+</beans>  

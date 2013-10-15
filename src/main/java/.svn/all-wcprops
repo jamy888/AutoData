@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java
+END
+Rescode.properties
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/Rescode.properties
+END
+SqlMapConfig.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/SqlMapConfig.xml
+END
+struts.xml
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/struts.xml
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/applicationContext.xml
+END
+SysParam.properties
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/SysParam.properties
+END
+example.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/example.xml
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/log4j.properties
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/cmt/db/po/base
+END
+BaseTblAdmTxnInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/cmt/db/po/base/BaseTblAdmTxnInfo.java
+END
+BaseTblAdmBrhInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/cmt/db/po/base/BaseTblAdmBrhInfo.java
+END
+BaseTblAdmOprInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/cmt/db/po/base/BaseTblAdmOprInfo.java
+END
+BaseTblAdmRoleInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/cmt/db/po/base/BaseTblAdmRoleInfo.java
+END

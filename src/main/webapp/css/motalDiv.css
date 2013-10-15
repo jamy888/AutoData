@@ -1,0 +1,18 @@
+#motalDiv{left:0;overflow:scroll;position:absolute;top:0;width:100%}
+.motalBg {width:100%;position:absolute;top:0;left:0;z-index:999;text-align:center;}
+.alertTable {z-index:999;position:fixed;left:0;width:100%;text-align:center;_position:absolute;_bottom:auto;_top:expression(eval(document.documentElement.scrollTop));}
+.alertTabDiv {border:solid 5px black;position:relative;margin:0 auto;background-color:#FFFFFF;text-align:center;border-radius: 10px;}
+.closeA {cursor:pointer;color:blue;float:right;margin-right:5px;_margin-right:5px;margin-top:5px;_margin-top:5px;}
+
+#errorTipMotalDiv{
+	margin:0 auto;width:305px;border:solid 5px #00479d;
+}
+#errorTipMotalDiv div.tipContent{
+	margin:20px auto;
+	text-align:center;
+	font-size:14px;
+	color:black;
+	line-height:30px;
+	vertical-align:middle;
+	padding:20px auto;
+}

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/com/huateng/util
+END
+SysParam.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/com/huateng/util/SysParam.java
+END
+ContextUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/com/huateng/util/ContextUtil.java
+END
+XmlDBParser.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/com/huateng/util/XmlDBParser.java
+END
+ReMerInfoUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/com/huateng/util/ReMerInfoUtil.java
+END
+XmlDBUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/com/huateng/util/XmlDBUtil.java
+END
+BusParam.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/com/huateng/util/BusParam.java
+END
+SystemDictionaryUnit.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/com/huateng/util/SystemDictionaryUnit.java
+END
+SysPrmUnit.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/com/huateng/util/SysPrmUnit.java
+END

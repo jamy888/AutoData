@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/cmt/getData/dao
+END
+TblAdmOprInfoDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/cmt/getData/dao/TblAdmOprInfoDAO.java
+END
+TblAdmOprInfoDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/cmt/getData/dao/TblAdmOprInfoDAOImpl.java
+END
+TblAppMarketingToolUsedtlDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/cmt/getData/dao/TblAppMarketingToolUsedtlDAO.java
+END
+ComTbldtlDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/cmt/getData/dao/ComTbldtlDAO.java
+END
+TblAppMarketingToolUsedtlDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/cmt/getData/dao/TblAppMarketingToolUsedtlDAOImpl.java
+END
+ComTbldtlDAOImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/cmposp/!svn/ver/3740/src/AutoData/src/main/java/cmt/getData/dao/ComTbldtlDAOImpl.java
+END

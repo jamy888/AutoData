@@ -1,0 +1,585 @@
+/**************** 公共样式   ***********/
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif, "宋体", Tahoma;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-size: 12px;
+	color: #333;
+	scrollbar-arrow-color: #fff; /*三角箭头的颜色*/
+	scrollbar-base-color: #64B6D6; /*滚动条的基本颜色*/
+}
+
+select {
+	font-size: 12px;
+	color: #000;
+	font-family: Verdana, Arial, Helvetica, sans-serif, "宋体", Tahoma;
+}
+
+img {
+	border: 0px;
+	vertical-align: middle;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+form {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+input {
+	font-family: arial;
+	font-size: 12px;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	margin: 0px;
+	padding: 0px;
+}
+
+/**************** 页面样式   ***********/
+#formTop {
+	float: left;
+	width: 99%;
+	margin: 10px 0 0 5px;
+	padding: 0;
+	color: #666;
+}
+
+#formBottom {
+	float: left;
+	width: 99%;
+	margin: 5px;
+	padding: 0;
+	color: #666;
+}
+
+#bottomLeft {
+	float: left;
+	width: 69%;
+	margin: 0;
+	padding: 0;
+	color: #666;
+}
+
+#bottomRight {
+	float: right;
+	width: 30%;
+	margin: 0;
+	padding: 0;
+	color: #666;
+}
+
+#maintable {
+	border: solid 1px #9ca0b7;
+	color: #333;
+	width: 517px;
+}
+
+#maintable thead {
+	text-align: center;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+#maintable tbody td {
+	text-align: center;
+	border-top: solid 1px #9ca0b7;
+	font-size: 12px;
+}
+
+#detailDiv {
+	float: left;
+	color: #333;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	border-top: solid 1px #ccc;
+	display: none;
+}
+
+#detailDiv ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#detailDiv li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+}
+
+.detailCol {
+	float: left;
+	font-size: 13px;
+	width: 100%;
+	border-bottom: solid 1px #ccc;
+	border-right: solid 1px #ccc;
+}
+
+.detailTitle {
+	float: left;
+	text-align: right;
+	font-size: 12px;
+	background-color: #F4F4F4;
+	width: 37%;
+	padding: 5px 2px 5px 0;
+	margin: 0;
+	height: 35px;
+}
+
+.detailValue {
+	float: left;
+	text-align: left;
+	font-size: 12px;
+	width: 60%;
+	margin: 5px 0 5px 2px;
+	padding: 0;
+	overflow: inherit;
+	word-wrap: break-word;
+}
+
+.detailModify {
+	float: left;
+	text-align: left;
+	font-size: 12px;
+	width: 58%;
+	margin: 2px 0 2px 2px;
+	padding: 0;
+	display: none;
+}
+
+.formButton {
+	border: 1px solid #9ca0b7;
+	color: #006699;
+	background-color: #F5F9FF;
+	line-height: 18px;
+	height: 19px;
+}
+
+.pageNum {
+	color: #ff6600;
+	font-weight: bold;
+}
+
+/**************** 通用样式   ***********/
+#divall {
+	width: auto
+}
+
+#header {
+	width: auto;
+	height: 100px;
+	background: url(../image/header_bg.jpg) repeat-x;
+}
+
+#divmain {
+	width: auto;
+	margin: 0 auto;
+}
+
+#divtop {
+	width: 960px;
+	margin: 0 auto;
+	height: 100px;
+}
+
+#logo_cart {
+	float: left;
+	width: 540px;
+	height: 100px;
+	background: url(../image/logo_cart.jpg) no-repeat;
+}
+
+#top_bar {
+	float: right;
+	color: #003366;
+	margin-top: 38px;
+	background: url(../image/topbar_bg.jpg) no-repeat;
+	width: 120px;
+	height: 24px;
+	text-align: center;
+	line-height: 24px;
+	font-weight: bold;
+}
+
+#top_bar a {
+	color: #003366;
+}
+
+#top_bar a:hover {
+	color: #FF6600;
+}
+
+#sub_menu {
+	float: left;
+	position: absolute;
+	top: 8px;
+}
+
+#sub_menu_top {
+	width: 180px;
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	background: url(../image/sub_menu_top_bg.jpg) no-repeat;
+	text-align: center;
+}
+
+/************** 综合样式 **************/
+#divAll {
+	width: auto
+}
+
+#divMain {
+	width: auto;
+	margin: 0 auto;
+}
+
+#divTop {
+	width: 960px;
+	margin: 0 auto;
+	height: 100px;
+}
+
+#divInfo {
+	float: none;
+	width: 450px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#divInfoTitle {
+	width: 450px;
+	height: 27px;
+	line-height: 27px;
+	padding-left: 30px;
+	background: url(../image/info_title_bg.jpg) no-repeat;
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif, "宋体", Tahoma;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#divInfoBody {
+	width: 448px;
+	line-height: 27px;
+	background: #F6F9FF;
+	color: #666;
+	border: #9ca0b7 1px solid;
+	margin: 0 auto;
+	float: left;
+	padding: 0;
+}
+
+.fontInfo {
+	float: left;
+	vertical-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif, "宋体", Tahoma;
+	font-size: 14px;
+	color: red;
+	height: 100px;
+	line-height: 100px;
+}
+
+.iconInfo {
+	float: left;
+	width: 100px;
+	height: 100px;
+	background: url("../image/icon_other.jpg") left top no-repeat;
+}
+
+/* 以下为中部右边 主体内容*/
+#mainIndex {
+	float: left;
+	padding: 0;
+}
+
+#mainBody {
+	float: left;
+	width: 760px;
+	border: solid 1px #9ca0b7;
+	background-color: #FFFFFF;
+	padding: 0;
+	margin: 0;
+	left: 50px;
+}
+
+#mainTop {
+	height: 30px;
+	line-height: 30px;
+}
+
+#topLeft {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	width: 4px;
+	min-width: 4px;
+	background: url(../image/title_left.jpg) no-repeat;
+}
+
+#topCenter {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	background: url(../image/title_middle.jpg) repeat-x;
+	padding: 0 10px;
+}
+
+#topRight {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	width: 30px;
+	min-width: 30px;
+	background: url(../image/title_right.jpg) no-repeat;
+}
+
+#mainForm {
+	float: left;
+	width: 100%;
+	margin: 10px 0 5px 5px;
+	padding: 0;
+	color: #666;
+}
+
+#mainForm ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#mainForm li {
+	list-style: none;
+}
+
+#mainTitle {
+	margin: 10px;
+	padding: 0;
+	border-bottom: 1px dashed #999;
+	overflow: hidden;
+	font-size: 14px;
+	font-family: Verdana, Arial, Helvetica, sans-serif, "宋体", Tahoma;
+}
+
+#submitButton {
+	margin: 5px;
+	text-align: center;
+}
+
+.submitButton {
+	margin: 5px;
+	padding: 10px;
+}
+
+/************** 页面元素样式 **************/
+	/************** 通用input文本框 **************/
+.formBox {
+	border: 1px solid #9ca0b7;
+	font-family: Verdana, Arial, Helvetica, sans-serif, "宋体", Tahoma;
+}
+
+/************** 通用input文本框出错 **************/
+.formError {
+	border: 1px solid red;
+	font-family: Verdana, Arial, Helvetica, sans-serif, "宋体", Tahoma;
+}
+
+/************** 通用input文本框回显 **************/
+.textShow {
+	margin: 5px 0;
+	font-size: 13px;
+	font-family: Verdana, Arial, Helvetica, sans-serif, "宋体", Tahoma;
+	color: #000;
+}
+
+/************** 通用textarea文本框 **************/
+.textareaInput {
+	border: 1px solid #999;
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif, "宋体", Tahoma;
+	overflow: auto;
+}
+
+/************** 日历图片样式 **************/
+.calendarImage {
+	cursor: pointer;
+}
+
+/************** select下拉列表样式 **************/
+.mainbox {
+	width: 224px;
+}
+
+.box0 {
+	width: 100px;
+	height: 13px;
+	float: left;
+	margin-top: 2px;
+	padding-top: 5px;
+	padding-left: 2px;
+	text-align: inherit;
+	margin-left: 3px;
+	border: 1px solid #1874CD;
+}
+
+.box1 {
+	width: 15px;
+	height: 13px;
+	cursor: pointer;
+	border: 1px solid #1874CD;
+	float: left;
+	text-align: center;
+	margin-top: 2px;
+	padding-top: 5px;
+	background: transparent url("../image/select.jpg");
+}
+
+.items {
+	border: 1px solid #1874CD;
+	width: 220px;
+	display: none;
+	background: white;
+	margin-left: 10px;
+	position: absolute;
+	margin-top: -5px;
+	margin-left: 7px;
+}
+
+.box3 {
+	width: 218px;
+	background: white;
+}
+
+.over {
+	background-color: #1874CD;
+	font-weight: bold;
+	color: #FFF;
+	cursor: pointer;
+	margin-left: 2px;
+}
+
+/************** 描述信息样式 **************/
+.okMsg {
+	padding: 5px 5px 5px 25px;
+	border: 1px solid #999999;
+	background: #FFFFFF url(../image/standard_msg_ok.gif) 5px 5px no-repeat;
+	color: #000;
+}
+
+.warningMsg {
+	padding: 5px 5px 5px 25px;
+	border: 1px solid #00A8FF;
+	background: #E2F5FF url(../image/standard_msg_warning.gif) 5px 5px
+		no-repeat;
+	color: #000;
+}
+
+.errorMsg {
+	padding: 5px 5px 5px 25px;
+	border: 1px solid #F60;
+	background: #FFF2E9 url(../image/standard_msg_error.gif) 5px 5px
+		no-repeat;
+	color: #000;
+}
+
+.doubleErrorMsg {
+	padding: 3px 5px 3px 5px;
+	border: 1px solid #F60;
+	background: #FFF2E9;
+	font-size: 12px;
+	color: #000;
+}
+
+.doubleWarningMsg {
+	padding: 3px 5px 3px 5px;
+	border: 1px solid #00A8FF;
+	background: #E2F5FF;
+	font-size: 12px;
+	color: #000;
+}
+
+.hintMsg {
+	background-color: transparent;
+	background-image: none;
+	color: #000;
+	padding: 5px;
+}
+
+.doubleHint {
+	font-size: 12px;
+	background-color: #F4F4F4;
+	padding-bottom: 1px;
+	width: 100px;
+}
+
+.bottomBorder {
+	border-bottom: 1px solid #1874CD;
+}
+
+.textBox {
+	border: 1px solid #1874CD;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	font-family: Verdana, Arial, Helvetica, sans-serif, "宋体", Tahoma;
+}
+
+.textError {
+	border: 1px solid red;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+	font-family: Verdana, Arial, Helvetica, sans-serif, "宋体", Tahoma;
+}
+
+.mainTable {
+	border-right: 1px solid #1874CD;
+	border-top: 1px solid #1874CD;
+	border-left: 1px solid #1874CD;
+	margin-right: 15px;
+}
+
+#queryColumn {
+	background-color: #ccc;
+}
+
+#queryColumn tr {
+	background-color: #FFFFFF;
+}
+
+.btn_normal {
+	background: transparent url(../image/css-nav.gif) repeat-x scroll left bottom;
+	border: 1px solid rgb(220,220,233);
+	line-height: 25px;
+	height: 25px;
+	cursor: pointer;
+}

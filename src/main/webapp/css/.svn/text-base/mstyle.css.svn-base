@@ -1,0 +1,532 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif, "宋体", Tahoma;
+}
+
+body {
+    font-size: 12px;
+}
+
+FIELDSET {
+    text-align: center;
+    border: 1px dashed #ff9966;
+    margin-bottom: 5px;
+}
+
+legend {
+    background-color: white;
+    text-align: center;
+    font-size: 12px;
+    margin-left: 12px;
+}
+#box{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#header {
+    cursor: pointer;
+    width: 1000px;
+    height: 61px;
+    background: url("../image/monitorTitle.jpg") #020001 left top no-repeat;
+}
+
+#mainIndex {
+    float: left;
+    padding: 0;
+}
+
+#mainBody {
+    float: left;
+    width: 760px;
+    border: solid 1px #9ca0b7;
+    background-color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+    left: 50px;
+}
+
+#mainForm {
+    width: 99%;
+    margin: 5px auto;
+    padding: 0;
+    color: #666;
+}
+
+#mainForm ul{
+    margin-left: 5px;
+    color: #666;
+    font-size: 14px;
+    width: 98%;
+}
+
+#mainTop {
+    height: 30px;
+    line-height: 30px;
+}
+
+#topLeft {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    width: 4px;
+    min-width: 4px;
+    background: url(../image/title_left.jpg) no-repeat;
+}
+
+#topCenter {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    background: url(../image/title_middle.jpg) repeat-x;
+    padding: 0 10px;
+}
+
+#topRight {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    min-width: 30px;
+    background: url(../image/title_right.jpg) no-repeat;
+}
+#tabs{
+    float: left;
+    display: block;
+    width: 993px;
+}
+
+#mainDiv {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#mainDiv li {
+    display: block;
+}
+
+#chart {
+    float: left;
+    display: block;
+    text-align: left;
+}
+
+.mainTitle {
+    font-size: 14px;
+    color: buttontext;
+}
+
+.container {
+    float: left;
+    display: block;
+    padding: 10px;
+}
+
+.serverSet {
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    float: left;
+}
+
+.baseInfo {
+    display: block;
+    width: 120px;
+    float: left;
+    height: 500px;
+    margin-top: 10px;
+}
+
+.table {
+    display: block;
+    float: left;
+    width: 500px;
+    background-color: #ccc;
+}
+
+.blackTable {
+    font-size: 12px;
+    background: #499437;
+    width: 780px;
+}
+
+.blackTable thead {
+    color: #449C22;
+    font-size: 13px;
+    background: #c0e2b3;
+    font-weight: bold;
+}
+
+.blackTable tbody td {
+    padding: 2px;
+}
+
+.blackTable td {
+    padding: 2px;
+}
+
+.nodTable {
+    float: left;
+    text-align: center;
+}
+
+.objSta {
+    border: 0;
+}
+
+.nodStat2 {
+    background-color: #e53a02;
+}
+
+.nodStat1 {
+    background-color: #ffdd19;
+}
+
+.nodStat0 {
+    background-color: #fff;
+}
+
+.roundButton {
+    margin: 2px;
+    padding: 5px;
+    text-align: center;
+}
+
+.returnLi {
+    margin-top: 50px;
+}
+
+.txnIframe {
+    border: 0px;
+    width: 100%;
+    height: 550px;
+}
+
+/************** 单列各字段li样式 **************/
+ul.singleCol {
+    float: left;
+    background: transparent url(../image/back_middle.gif) left bottom repeat-y;
+}
+
+ul.singleCol li {
+    width: 100%;
+    float: left;
+    background: transparent url(../image/back_bottom.gif) left bottom no-repeat;
+}
+
+ul.singleCol li.title {
+    color: #999;
+    background: transparent url(../image/back_top.gif) 1px top repeat-y;
+    display: inline;
+    line-height: 0px;
+}
+
+ul.singleCol li .hint {
+    float: left;
+    width: 140px;
+    font-size: 14px;
+    text-align: right;
+    margin: 5px 0;
+    margin-right: 5px;
+    display: block;
+}
+
+ul.singleCol li .line {
+    height: 1px;
+    line-height: 0;
+    font-size: 0;
+    overflow: hidden;
+}
+
+ul.singleCol li .input {
+    float: left;
+    width: 220px;
+    margin: 5px 0 5px 5px;
+    font-size: 13px;
+    display: block;
+    line-height: 20px;
+}
+
+ul.singleCol li .input li{
+    background: none;
+    font-size: 12px;
+}
+
+ul.singleCol li .info {
+    float: left;
+    margin: 0;
+    width: 300px;
+    font-size: 12px;
+    display: block;
+}
+
+ul.singleCol li .oldValue {
+    float: left;
+    width: 140px;
+    font-size: 13px;
+    height: 39px;
+    margin-top: 5px;
+    display: block;
+}
+
+ul.singleCol li .inputWide {
+    float: left;
+    width: 580px;
+    margin: 5px;
+    font-size: 13px;
+    display: block;
+    line-height: 20px;
+}
+
+ul.singleCol li .infoWide {
+    float: left;
+    margin: 0;
+    width: 280px;
+    font-size: 12px;
+    display: block;
+}
+
+ul.singleCol li .forHeight {
+    float: left;
+    margin: 0;
+    width: 1px;
+    font-size: 12px;
+    border: 1px #000 solid;
+}
+
+/************** 描述信息样式 **************/
+.okMsg {
+    padding: 3px 3px 3px 25px;
+    border: 1px solid #999999;
+    margin: 3px 0px 3px 0px;
+    background: #FFFFFF url(../image/standard_msg_ok.gif) 3px 3px no-repeat;
+    color: #000;
+}
+
+.warningMsg {
+    padding: 3px 3px 3px 25px;
+    margin: 3px 0px 3px 0px;
+    border: 1px solid #00A8FF;
+    background: #E2F5FF url(../image/standard_msg_warning.gif) 3px 3px
+        no-repeat;
+    color: #000;
+}
+
+.errorMsg {
+    padding: 3px 3px 3px 25px;
+    margin: 3px 0px 3px 0px;
+    border: 1px solid #F60;
+    background: #FFF2E9 url(../image/standard_msg_error.gif) 3px 3px
+        no-repeat;
+    color: #000;
+}
+
+.hintMsg {
+    background-color: transparent;
+    background-image: none;
+    color: #000;
+    padding: 2px;
+}
+
+.iconInfo {
+    height: 60px;
+    line-height: 30px;
+    background: #fff url(../image/icon_right.jpg) 20px 5px no-repeat;
+    text-align: left;
+    font-family: Verdana, Arial, Helvetica, sans-serif, "宋体", Tahoma;
+    font-size: 14px;
+    color: #9ca0b7;
+    padding: 5px 0 5px 70px;
+}
+
+.errorInfo {
+    height: 60px;
+    line-height: 30px;
+    background: #fff url(../image/icon_wrong.gif) 20px 5px no-repeat;
+    text-align: left;
+    font-family: Verdana, Arial, Helvetica, sans-serif, "宋体", Tahoma;
+    font-size: 14px;
+    color: red;
+    padding: 5px 0 5px 70px;
+}
+
+.backButton {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#divInfoTitle {
+    margin: 0 auto;
+    width: 450px;
+    height: 27px;
+    line-height: 27px;
+    background: url(../image/info_title_bg.jpg) no-repeat;
+    color: #FFFFFF;
+    font-family: Verdana, Arial, Helvetica, sans-serif, "宋体", Tahoma;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#divInfoBody {
+    float: none;
+    margin: 0 auto;
+    width: 448px;
+    background: #F6F9FF;
+    color: #666;
+    border: #9ca0b7 1px solid;
+}
+
+.menuUl {
+    float: left;
+    width: 170px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menuUl div.subMenu li {
+    background-color:#dddfee;
+}
+.menuUl li a {
+    border: 0.1em solid #DCDCE9;
+    color: #0D2474;
+    display: block;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    border-bottom:solid 1px gray;
+}
+.menuUl li a.menu {
+    color: #fff;
+    background: transparent url(../image/menuBg.jpg) repeat-x scroll left bottom;
+}
+.menuUl li a.menu:hover, .menuUl li a.menu:active, .menuUl li a.menu:focus {
+    text-decoration: none;
+}
+.menuUl li a:hover, .menuUl li a:active, .menuUl li a:focus {
+    text-decoration:underline;
+}
+
+.divRight {
+    float: left;
+    width: 780px;
+}
+
+#submitButton {
+    margin: 5px;
+    text-align: center;
+}
+
+.singleSelect {
+    *margin-left: 5px;
+    border: #9ca0b7 1px solid;
+}
+
+.formBox{
+    border: #9ca0b7 1px solid;
+}
+
+.loginBody{
+    background:url(../image/back_blue.jpg) #e5e4e4 repeat-x;    
+}
+.bgDiv{
+    margin:0 auto;
+    background:url(../image/denglu4.jpg) no-repeat;
+    width:800px;
+    height:520px;
+}
+#userLogin{
+    margin: 380px 0 0 600px;
+    width:300px;
+}
+.inputBox{
+    width:140px;
+}
+.checkTable{
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.checkTable td {
+    width: 160px;
+}
+
+.loginTable td {
+    line-height: 25px;
+}
+.submitBt{
+    background: transparent url("../image/button.png") no-repeat;
+    width: 162px;
+    height: 35px;
+    border: 0;
+}
+.denglu1{
+    background: url("../image/denglu_01.jpg") no-repeat;
+    width: 1024px;
+    height: 87px;
+}
+.denglu2{
+    background: url("../image/denglu_02.jpg") no-repeat;
+    width: 149px;
+    height: 604px;
+}
+.denglu3{
+    background: url("../image/denglu_03.jpg") no-repeat;
+    width: 362px;
+    height: 604px;
+}
+.denglu4{
+    background: url("../image/denglu_04.jpg") no-repeat;
+    width: 513px;
+    height: 604px;
+}
+#bgTable{
+    width: 1024px;
+    height: 604px;
+    border: 0;
+    z-index:1;
+    border-spacing: 0;
+}
+.subMenu{
+    float: left;
+    display: none;
+}
+.subMenu a{
+	background-color:#dddfee;
+	border-bottom:solid 1px gray;
+}
+.subMenu2 a{
+	background-color:#fff;
+}
+#emailDiv{
+    float: left;
+    position: relative;
+    border: #DDDFEE 1px solid;
+    display: none;
+    max-height: 200px;
+    overflow: auto;
+    width: 162px;
+    margin-top: 5px;
+}
+#emailDiv li{
+    width: 70px;
+}
+#emailDiv a{
+    color: #666666;
+}
+.comArea{
+    font-size:12px;
+    width: 162px;
+}
+#view{
+    padding: 4px 8px;
+}

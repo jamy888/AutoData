@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+    <bean id="ADMLOGIN01Target"
+        class="cmt.db.bo.impl.ADMLOGIN01_BO_IMPL" singleton="false">
+        <property name="tblAdmOprInfoDAO">
+            <ref bean="TblAdmOprInfoDAOTarget" />
+        </property>
+        <property name="tblAdmBrhInfoDAO">
+            <ref bean="TblAdmBrhInfoDAOTarget" />
+        </property>
+        <property name="tblAdmTxnInfoDAO">
+            <ref bean="TblAdmTxnInfoDAOTarget" />
+        </property>
+        <property name="tblAdmRoleTxnMapDAO">
+            <ref bean="TblAdmRoleTxnMapDAOTarget" />
+        </property>
+        <property name="tblAdmRoleInfoDAO">
+            <ref bean="TblAdmRoleInfoDAOTarget" />
+        </property>
+    </bean>
+
+    <bean id="ADMLOGIN01BO"
+        class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="proxyInterfaces">
+            <value>cmt.db.bo.iface.I_ADMLOGIN01_BO</value>
+        </property>
+        <property name="target">
+              <ref local="ADMLOGIN01Target"/>
+        </property>
+        <property name="interceptorNames">
+            <list>
+                <value>transactionInterceptorCmt</value>
+            </list>
+        </property>
+    </bean>
+
+</beans>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+    <package name="cmt" namespace="/cmt" extends="com">
+    	<action name="index">
+            <result>index.jsp</result>
+        </action>
+        <action name="GETTEXT011">
+        	<result>/WEB-INF/jsp/gettext/GETTEXT011.jsp</result>
+        </action>
+        <action name="GETTEXT012">
+        	<result>/WEB-INF/jsp/gettext/GETTEXT012.jsp</result>
+        </action>
+        <action name="GETTEXT021">
+        	<result>/WEB-INF/jsp/gettext/GETTEXT021.jsp</result>
+        </action>
+        <action name="GETTEXT022">
+        	<result>/WEB-INF/jsp/gettext/GETTEXT022.jsp</result>
+        </action>
+        <action name="GETTEXT023">
+        	<result>/WEB-INF/jsp/gettext/GETTEXT023.jsp</result>
+        </action>
+        <action name="GETTEXT031">
+        	<result>/WEB-INF/jsp/gettext/GETTEXT031.jsp</result>
+        </action>
+        <action name="GETTEXT041">
+        	<result>/WEB-INF/jsp/gettext/GETTEXT041.jsp</result>
+        </action>
+        <action name="GETTEXT042">
+        	<result>/WEB-INF/jsp/gettext/GETTEXT042.jsp</result>
+        </action>
+        <action name="GETTEXT111">
+        	<result>/WEB-INF/jsp/gettext/GETTEXT111.jsp</result>
+        </action>
+        <action name="GETTEXT112">
+        	<result>/WEB-INF/jsp/gettext/GETTEXT112.jsp</result>
+        </action>
+        <action name="GETTEXT113">
+        	<result>/WEB-INF/jsp/gettext/GETTEXT113.jsp</result>
+        </action>
+        <action name="GETTEXT114">
+        	<result>/WEB-INF/jsp/gettext/GETTEXT114.jsp</result>
+        </action>
+        <action name="GETTEXT115">
+        	<result>/WEB-INF/jsp/gettext/GETTEXT115.jsp</result>
+        </action>
+        <action name="GETTEXT121">
+        	<result>/WEB-INF/jsp/gettext/GETTEXT121.jsp</result>
+        </action>
+        <action name="GETTEXT122">
+        	<result>/WEB-INF/jsp/gettext/GETTEXT122.jsp</result>
+        </action>
+        <action name="GETTEXT123">
+        	<result>/WEB-INF/jsp/gettext/GETTEXT123.jsp</result>
+        </action>
+        <action name="GETTEXT131">
+        	<result>/WEB-INF/jsp/gettext/GETTEXT131.jsp</result>
+        </action>
+        
+
+        
+
+        <!-- <action name="Login_*" method="{1}" class="example.Login">
+            <result name="input">/example/Login.jsp</result>
+            <result type="redirectAction">Menu</result>
+        </action>
+
+        <action name="*" class="example.ExampleSupport">
+            <result>/example/{1}.jsp</result>
+        </action> -->
+
+        <!-- Add actions here -->
+    </package>
+</struts>

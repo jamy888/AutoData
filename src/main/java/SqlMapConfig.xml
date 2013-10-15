@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMapConfig
+  PUBLIC "-//ibatis.apache.org//DTD SQL Map Config 2.0//EN"
+  "http://ibatis.apache.org/dtd/sql-map-config-2.dtd">    
+<sqlMapConfig>   
+	<!-- <transactionManager type="JDBC" commitRequired="false">     
+    <dataSource type="SIMPLE">   
+      <property name="JDBC.Driver" value="oracle.jdbc.driver.OracleDriver"/>   
+      <property name="JDBC.ConnectionURL" value="jdbc:oracle:thin:@130.251.101.132:1521:ORA10G" />   
+      <property name="JDBC.Username" value="mobilemall" />   
+      <property name="JDBC.Password" value="mobilemall" />   
+    </dataSource>   
+  	</transactionManager> -->   
+    <!-- <sqlMap resource="mapper/User.xml"/>  --> 
+    <sqlMap resource="resources/mapper/COM_TBL_SqlMap.xml"/>
+    <sqlMap resource="resources/mapper/DEV_POSP_TBL_ADM_OPR_INFO_SqlMap.xml"/>
+    <sqlMap resource="resources/mapper/CMST_TBL_APP_MARKETING_TOOL_USEDTL_SqlMap.xml"/>
+</sqlMapConfig>

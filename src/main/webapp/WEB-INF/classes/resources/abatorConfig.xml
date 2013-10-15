@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE abatorConfiguration PUBLIC "-//Apache Software Foundation//DTD Abator for iBATIS Configuration 1.0//EN" "http://ibatis.apache.org/dtd/abator-config_1_0.dtd" >
+<abatorConfiguration >
+<!--<properties resource="classpath*:jdbc.properties"/>-->
+  <abatorContext >
+  	
+    <jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver" connectionURL="jdbc:oracle:thin:@130.233.19.7:1521:mecp" userId="dev_posp" password="dev_posp123" >
+      <classPathEntry location="D:\zyy\AutoData\WebContent\WEB-INF\lib\ojdbc14.jar" />
+      <!-- <classPathEntry location="C:\Users\zouyiyong\.m2\repository\com\oracle\ojdbc5\11.2.0.2.0\ojdbc5-11.2.0.2.0.jar" /> -->
+    </jdbcConnection>
+    <javaModelGenerator targetPackage="cmt.getData.po" targetProject="AutoData/src/" />
+    <sqlMapGenerator targetPackage="resources.mapper" targetProject="AutoData/src/" />
+    <daoGenerator targetPackage="cmt.getData.dao" targetProject="AutoData/src/" type="GENERIC-CI" />
+    <table schema="dev_posp" tableName="TBL_ADM_OPR_INFO" 				enableSelectByExample="false" enableDeleteByExample="false" enableCountByExample="false" enableUpdateByExample="fasle"/>
+    </abatorContext>
+</abatorConfiguration>

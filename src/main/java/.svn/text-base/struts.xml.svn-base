@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"  "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="false" />
+	
+    <package name="com" extends="struts-default">
+        <default-action-ref name="index" />
+        <global-results>
+            <result name="error">/error.jsp</result>
+        </global-results>
+        <global-exception-mappings>
+            <exception-mapping exception="java.lang.Exception" result="error"/>
+        </global-exception-mappings>
+
+        <!-- <action name="index">
+            <result type="redirectAction">
+                <param name="actionName">HelloWorld</param>
+                <param name="namespace">/cmt</param>
+            </result>
+        </action> -->
+        <action name="download" class="cmt.getData.action.DownLoadAction">
+			<!-- <param name="directory">D:\temp\AutoData\rpt</param> -->
+			<result name="success" type="stream">
+				<!-- 指定下载文件的内容类型，text/plain是默认类型 -->
+				<param name="contentType">application/zip;charset=ISO8859-1</param>
+				<!-- inputName默认值是inputStream，如果action中用于读取下载文件内容的属性名是inputStream，那么可以省略这个参数 -->
+				<param name="inputName">inputStream</param>
+				<!--动态获取文件名，从Action中的取得filename -->
+				<param name="contentDisposition">
+					attachment;filename="${filename}.zip"
+				</param>
+				<param name="bufferSize">2048</param>
+			</result>
+			<result name="input">/WEB-INF/inputError.jsp</result>
+		</action>
+        <action name="login" class="tblAdmOprInfoAction" method="login">
+            <result name="success">/WEB-INF/jsp/admin.jsp</result>
+            <result name="input">index.jsp</result>
+        </action>
+        <action name="deleteFile" class = "deletefile" method = "safeExecute"></action>
+        <action name="GETTEXT011" class="GETTEXT011" method="safeExecute" >
+        	<!-- <result name="success" type="chain">/WEB-INF/jsp/HelloWorld.jsp</result> -->
+        </action>
+        <action name="GETTEXT012" class="GETTEXT012" method="safeExecute" >
+        	<!-- <result name="success" type="chain">/WEB-INF/jsp/HelloWorld.jsp</result> -->
+        </action>
+        <action name="GETTEXT021" class="GETTEXT021" method="safeExecute" >
+        	<!-- <result name="success" type="chain">/WEB-INF/jsp/HelloWorld.jsp</result> -->
+        </action>
+        <action name="GETTEXT022" class="GETTEXT022" method="safeExecute"></action>
+        <action name="GETTEXT023" class="GETTEXT023" method="safeExecute"></action>
+        <action name="GETTEXT031" class="GETTEXT031" method="safeExecute"></action>
+        <action name="GETTEXT041" class="GETTEXT041" method="safeExecute"></action>
+        <action name="GETTEXT042" class="GETTEXT042" method="safeExecute"></action>
+        <action name="GETTEXT111" class="GETTEXT111" method="safeExecute"></action>
+        <action name="GETTEXT112" class="GETTEXT112" method="safeExecute"></action>
+        <action name="GETTEXT113" class="GETTEXT113" method="safeExecute"></action>
+        <action name="GETTEXT114" class="GETTEXT114" method="safeExecute"></action>
+        <action name="GETTEXT115" class="GETTEXT115" method="safeExecute"></action>
+        <action name="GETTEXT121" class="GETTEXT121" method="safeExecute"></action>
+        <action name="GETTEXT122" class="GETTEXT122" method="safeExecute"></action>
+        <action name="GETTEXT123" class="GETTEXT123" method="safeExecute"></action>
+        <action name="GETTEXT131" class="GETTEXT131" method="safeExecute"></action>
+        
+    </package>
+	<include file="example.xml"/>
+</struts>
